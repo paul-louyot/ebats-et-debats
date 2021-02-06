@@ -13,6 +13,9 @@ module.exports = {
     extend: {
       colors: {},
     },
+    fontFamily: {
+      'serif': ['Lora', 'ui-serif', 'Georgia', 'Cambria'],
+    }
   },
   variants: {},
   plugins: [require("@tailwindcss/typography")],
