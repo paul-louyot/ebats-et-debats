@@ -6,8 +6,8 @@ path: home
 <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
 <div class="container mx-auto flex flex-col justify-center items-center">
-  <h1 class="font-serif">
-    Bienvenue sur {{title}}
+  <h1 class="text-green-dark">
+    Bienvenue sur {% include "partials/logo.html" %}
   </h1>
 
 
@@ -19,7 +19,7 @@ path: home
 
     {% for post in postslist | reverse %}
     <article class="my-8">
-      <h2 class="font-bold text-3xl text-gray-900 mb-2">
+      <h2 class="font-bold text-3xl text-black mb-2">
         <a href="{{ post.url | url }}">
           {% if post.data.title %}
           {{ post.data.title }}
@@ -40,7 +40,7 @@ path: home
       {% endif %}
 
       <p>
-        <a href="{{ post.url | url }}" class="text-indigo-500 font-bold text-lg">
+        <a href="{{ post.url | url }}" class="text-blue font-bold text-lg">
           Read more →
         </a>
       </p>
